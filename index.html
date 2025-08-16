@@ -16,6 +16,12 @@
         .open-sans {
             font-family: "Open Sans", sans-serif;
         }
+
+        .formBg {
+            background-image: url('./resources/background.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 
 </head>
@@ -35,6 +41,31 @@
             </p>
         </section>
         <!-- form section -->
+        <form class="formBg grid grid-cols-2">
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" name="" id="name" class="bg-white">
+            </div>
+            <div>
+                <label for="email">Company Email</label><br>
+                <input type="email" name="" id="email" class="bg-white">
+            </div>
+            <div>
+                <label for="size">Company Size</label><br>
+                <input type="text" name="" id="size" class="bg-white">
+            </div>
+            <div>
+                <label for="subject">Subject</label><br>
+                <input type="text" name="" id="subject" class="bg-white">
+            </div>
+        </form>
+        <form class="formBg">
+            <div>
+                <label for="message">Message</label><br>
+                <textarea cols="47" rows="5" name="" id="message" class="bg-white"></textarea>
+            </div>
+            <button class="bg-white">contact Sales</button>
+        </form>
     </main>
 </body>
 
