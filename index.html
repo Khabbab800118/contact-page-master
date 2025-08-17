@@ -18,7 +18,11 @@
         }
 
         .formBg {
-            background-image: url('./resources/background.svg');
+            background-color: #A75FA8;
+        }
+
+        .bodyBg {
+            background-image: url('./resources/background@3x.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -26,8 +30,7 @@
 
 </head>
 
-<body
-    style="background-image: url('./resources/background@3x.png');background-repeat: no-repeat;background-size: cover;">
+<body class="bodyBg">
     <!-- header section -->
     <header class="pt-6 lg:pl-10 lg:pt-4">
         <img src="./resources/Logo@2x.png" alt="">
@@ -41,30 +44,37 @@
             </p>
         </section>
         <!-- form section -->
-        <form class="formBg grid grid-cols-2">
-            <div>
-                <label for="name">Name</label><br>
-                <input type="text" name="" id="name" class="bg-white">
+        <form class="formBg p-6 rounded-lg grid gap-4 mt-2">
+            <!-- name and email -->
+            <div class="grid lg:grid-cols-2">
+                <div>
+                    <label for="name" class="open-sans text-white">Name</label><br>
+                    <input type="text" name="" id="name" class="bg-white rounded-lg p-2" placeholder="Ethan Johnson">
+                </div>
+                <div>
+                    <label for="email" class="text-white open-sans">Company Email</label><br>
+                    <input type="email" name="" id="email" class="bg-white rounded-lg p-2"
+                        placeholder="ethan@johnson.com">
+                </div>
             </div>
-            <div>
-                <label for="email">Company Email</label><br>
-                <input type="email" name="" id="email" class="bg-white">
+            <!-- company and subject -->
+            <div class="grid lg:grid-cols-2">
+                <div class="w-[100%]">
+                    <label for="size" class="text-white open-sans">Company Size</label><br>
+                    <input type="text" name="" id="size" class="bg-white rounded-lg p-2" placeholder="50-100 employees">
+                </div>
+                <div>
+                    <label for="subject" class="text-white open-sans text-sm" a>Subject</label><br>
+                    <input type="text" name="" id="subject" class="bg-white rounded-lg p-2"
+                        placeholder="50-100 employees"">
+                </div>
             </div>
+            <!-- message -->
             <div>
-                <label for="size">Company Size</label><br>
-                <input type="text" name="" id="size" class="bg-white">
-            </div>
-            <div>
-                <label for="subject">Subject</label><br>
-                <input type="text" name="" id="subject" class="bg-white">
-            </div>
-        </form>
-        <form class="formBg">
-            <div>
-                <label for="message">Message</label><br>
-                <textarea cols="47" rows="5" name="" id="message" class="bg-white"></textarea>
-            </div>
-            <button class="bg-white">contact Sales</button>
+                <label for=" message" class="text-white open-sans text-sm">Message</label><br>
+                    <textarea cols="51" rows="5" name="" id="message" class="bg-white p-2 rounded-lg">50-100 employees</textarea>
+                </div>
+                <button class=" bg-white w-[100%] p-3 text-purple-700 font-semibold text-xs rounded-lg">Contact Sales</button>
         </form>
     </main>
 </body>
